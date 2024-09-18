@@ -33,7 +33,7 @@ export default function OrdersPage() {
                 </TableCell>
                 <TableCell>Sale</TableCell>
                 <TableCell>Successfull</TableCell>
-                <TableCell>09-17-2024</TableCell>
+                <TableCell>09/17/2024</TableCell>
                 <TableCell className="text-right">$250.00</TableCell>
             </TableRow>
           </TableBody>
