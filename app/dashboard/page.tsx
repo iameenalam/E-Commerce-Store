@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { DashboardStats } from "../components/dashboard/DashboardStats";
+import { RecentSales } from "../components/dashboard/RecentSales";
 
 export default function Dashboard() {
   return (
@@ -23,64 +24,7 @@ export default function Dashboard() {
           </CardHeader>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Recent Sales</CardTitle>
-          </CardHeader>
-          <CardContent className="flex flex-col gap-8">
-            <div className="flex items-center gap-4">
-              <Avatar className="hidden sm:flex h-9 w-9">
-                <AvatarFallback>AA</AvatarFallback>
-              </Avatar>
-              <div className="grid gap-1">
-                <p className="text-sm font-medium">Ameen Alam</p>
-                <p className="text-sm text-muted-foreground">
-                  ameenalam98@gmail.com
-                </p>
-              </div>
-              <p className="ml-auto font-medium">+$1,999.00</p>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <Avatar className="hidden sm:flex h-9 w-9">
-                <AvatarFallback>AA</AvatarFallback>
-              </Avatar>
-              <div className="grid gap-1">
-                <p className="text-sm font-medium">Ameen Alam</p>
-                <p className="text-sm text-muted-foreground">
-                  ameenalam98@gmail.com
-                </p>
-              </div>
-              <p className="ml-auto font-medium">+$1,999.00</p>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <Avatar className="hidden sm:flex h-9 w-9">
-                <AvatarFallback>AA</AvatarFallback>
-              </Avatar>
-              <div className="grid gap-1">
-                <p className="text-sm font-medium">Ameen Alam</p>
-                <p className="text-sm text-muted-foreground">
-                  ameenalam98@gmail.com
-                </p>
-              </div>
-              <p className="ml-auto font-medium">+$1,999.00</p>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <Avatar className="hidden sm:flex h-9 w-9">
-                <AvatarFallback>AA</AvatarFallback>
-              </Avatar>
-              <div className="grid gap-1">
-                <p className="text-sm font-medium">Ameen Alam</p>
-                <p className="text-sm text-muted-foreground">
-                  ameenalam98@gmail.com
-                </p>
-              </div>
-              <p className="ml-auto font-medium">+$1,999.00</p>
-            </div>
-          </CardContent>
-        </Card>
+        <RecentSales />
       </div>
     </>
   );
