@@ -36,10 +36,10 @@ export default async function BagRoute() {
           </div>
 
           <h2 className="mt-6 text-xl font-semibold">
-            You dont have any products in your Bag
+            You don't have any products in your Bag
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You currently dont have any products in your shopping bag. Please
+            You currently don't have any products in your shopping bag. Please
             add some so that you can see them right here.
           </p>
 
@@ -50,8 +50,8 @@ export default async function BagRoute() {
       ) : (
         <div className="flex flex-col gap-y-10">
           {cart?.items.map((item) => (
-            <div key={item.id} className="flex">
-              <div className="w-24 h-24 sm:w-32 sm:h-32 relative">
+            <div key={item.id} className="flex flex-col sm:flex-row sm:items-center">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 relative">
                 <Image
                   className="rounded-md object-cover"
                   fill
@@ -59,10 +59,10 @@ export default async function BagRoute() {
                   alt="Product image"
                 />
               </div>
-              <div className="ml-5 flex justify-between w-full font-medium">
-                <p>{item.name}</p>
+              <div className="ml-2 sm:ml-5 flex justify-between w-full font-medium">
+                <p className="text-sm sm:text-base">{item.name}</p>
                 <div className="flex flex-col h-full justify-between">
-                  <div className="flex items-center gap-x-2">
+                  <div className="flex items-center gap-x-2 text-sm sm:text-base">
                     <p>{item.quantity} x</p>
                     <p>${item.price}</p>
                   </div>
@@ -77,8 +77,8 @@ export default async function BagRoute() {
           ))}
           <div className="mt-10">
             <div className="flex items-center justify-between font-medium">
-              <p>Subtotal:</p>
-              <p>${new Intl.NumberFormat("en-US").format(totalPrice)}</p>
+              <p className="text-sm sm:text-base">Subtotal:</p>
+              <p className="text-sm sm:text-base">${new Intl.NumberFormat("en-US").format(totalPrice)}</p>
             </div>
 
             <form action={checkOut}>
