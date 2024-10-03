@@ -13,7 +13,7 @@ export function CategoriesSelection() {
         </h2>
 
         <Link
-          className="text-sm font-semibold text-primary hover:text-primary/80"
+          className="hidden md:block text-sm font-semibold text-primary hover:text-primary/80"
           href="/products/all"
         >
           Browse all Products &rarr;
