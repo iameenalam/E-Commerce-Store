@@ -49,12 +49,13 @@ export async function Navbar() {
             />
           </>
         ) : (
-          <div className="hidden md:flex md:flex-1 md:items-center md:justify-end md:space-x-2">
+          <div className="flex items-center space-x-2">
+            {/* Show Sign In button on all screen sizes */}
             <Button variant="ghost" asChild>
               <LoginLink>Sign in</LoginLink>
             </Button>
-            <span className="h-6 w-px bg-gray-200"></span>
-            <Button variant="ghost" asChild>
+            {/* Hide Create Account button on small screens */}
+            <Button variant="ghost" asChild className="hidden md:inline-block">
               <RegisterLink>Create Account</RegisterLink>
             </Button>
           </div>
