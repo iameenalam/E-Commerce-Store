@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Store
 
-## Getting Started
+**ShoeStore** is an easy-to-use online store where you can browse and buy different types of shoes. It’s designed to give users a smooth and simple shopping experience. The store comes with all the essential features you need for online shopping, like product listings, a shopping cart, user accounts, and more.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Product Catalog:** Browse a wide range of shoes, with detailed product pages including images, descriptions, and prices.
+- **Cart Functionality:** Add and remove items from the cart, update quantities, and view the total price before checkout.
+- **User Authentication:** Secure login and signup for customers, with a user dashboard to manage orders and preferences.
+- **Payment Integration:** Streamlined checkout experience with integrated payment gateway for secure transactions.
+- **Responsive Design:** Fully responsive layout that ensures a seamless experience across all devices.
+- **Admin Dashboard:** Admins can add, update, and remove products, upload banners and more.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js & Tailwind CSS
+- **Backend:** Next.js, Kinde-Auth, Upstash & Prisma
+- **Database:** Neon PostgreSQL Platform
+- **Payment Gateway:** Stripe
+- **File Uploads:** UploadThing
+- **Hosting:** Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Demo
 
-## Learn More
+You can view the live demo of the ShoeStore [here](https://e-shoestoree.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## Contributions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to fork the repository and submit pull requests. Any contributions to improving the ShoeStore project are welcome!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
