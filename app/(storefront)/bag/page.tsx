@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { checkOut, delItem } from "@/app/actions";
 import { ChceckoutButton, DeleteItem } from "@/app/components/SubmitButtons";
 import { Cart } from "@/app/lib/interfaces";

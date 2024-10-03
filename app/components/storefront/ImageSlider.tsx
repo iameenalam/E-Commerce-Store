@@ -31,7 +31,6 @@ export function ImageSlider({ images }: iAppProps) {
 
   return (
     <div className="grid gap-6 md:gap-3 items-start">
-      {/* Main image section */}
       <div className="relative overflow-hidden rounded-lg">
         <Image
           width={600}
@@ -51,7 +50,6 @@ export function ImageSlider({ images }: iAppProps) {
         </div>
       </div>
 
-      {/* Thumbnails */}
       <div className="grid grid-cols-5 gap-2 md:gap-4">
         {images.map((image, index) => (
           <div
